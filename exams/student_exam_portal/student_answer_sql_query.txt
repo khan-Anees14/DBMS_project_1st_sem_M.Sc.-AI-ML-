@@ -1,0 +1,6 @@
+CREATE TABLE student_answers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    question_id INT NOT NULL,
+    selected_answer TINYINT NOT NULL,
+    FOREIGN KEY (question_id) REFERENCES questions(id)
+);
