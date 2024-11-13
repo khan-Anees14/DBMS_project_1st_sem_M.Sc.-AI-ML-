@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href='login_page.css'>
+</head>
+
+<body>
+    <div class="wrapper" id="loginForm">
+        <form action="login.php" method="POST">
+            <h1>Login</h1>
+            <h2>Jamia Millia Islamia</h2>
+
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn" href="fill_form.html">Login</button>
+            <div class="register-link">
+                <p> Don’t have an account? <a href="#" onclick="toggleForms()">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="wrapper" id="registerForm" style="display: none;">
+        <form action="register.php" method="POST">
+            <h1>Register</h1>
+
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Create Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+            <div class="register-link">
+                <p> Already have an account? <a href="#" onclick="toggleForms()">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

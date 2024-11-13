@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+
+    <main>
+        <section class="manage-exams">
+            <h2>Manage Exams</h2>
+
+            <form id="add-question-form" method="POST" action="add_question.php">
+                <div class="question">
+                    <label for="question-text">Write Down Question Here :</label>
+                    <input type="text" id="question-text" name="question-text" required>
+                </div>
+                <div class="answers">
+                    <label for="answer1">Answer 1:</label>
+                    <input type="text" id="answer1" name="answer1" required>
+                    <label for="answer2">Answer 2:</label>
+                    <input type="text" id="answer2" name="answer2" required>
+                    <label for="answer3">Answer 3:</label>
+                    <input type="text" id="answer3" name="answer3" required>
+                    <label for="answer4">Answer 4:</label>
+                    <input type="text" id="answer4" name="answer4" required>
+                </div>
+                <div class="correct-answer">
+                    <label for="correct-answer">Correct Answer (1-4):</label>
+                    <input type="number" id="correct-answer" name="correct-answer" min="1" max="4" required>
+                </div>
+                <button type="submit">Add Question</button>
+            </form>
+
+
+
+            <h2>Delete Question</h2>
+            <form id="delete-question-form" method="POST" action="delete_questions.php">
+                <div class="delete-question">
+                    <label for="id">Enter Question ID to Delete:</label>
+                    <input type="number" id="id" name="id" required>
+                </div>
+                <button type="submit">Delete Question</button>
+            </form>
+            
+        </section>
+    </main>
+<!--
+    <footer>
+        <p>&copy; 2024 Online Exam System</p>
+    </footer>
+-->
+</body>
+</html>

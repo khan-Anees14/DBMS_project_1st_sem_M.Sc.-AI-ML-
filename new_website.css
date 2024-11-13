@@ -1,0 +1,304 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+    
+}
+.main {
+    width: 100%;
+    background: url(homepage.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:89vh;
+}
+
+.navbar {
+    width:1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon   {
+    width:330px;
+    float:left;
+    height:50px;
+}
+
+.Logo {
+    transform: scale(.5);
+    font-size: 24px;     
+    height: 3rem; 
+    float: left;
+}
+
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 27px;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #111;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #986698;
+}
+
+
+.dropbtn {
+  
+  padding: 15px;
+  font-size: 20px;
+  font: bold;
+  border: none;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  }
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0ece2;
+  min-width: 100px;
+  padding: 0px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+li {
+    display: block;
+    list-style-type: none;
+    margin: 20px 10px; 
+    font-family: Arial, sans-serif;
+}
+
+
+.courseDetails.option {
+    padding: 50px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    width: 150px;
+    transition: background-color 0.3s;
+}
+
+
+.search {
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 200px;
+    height:40px;
+    background:transparent;
+    border: 1px solid black;
+    margin-top: 13px;
+    color: black;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: lightcoral;
+    border:2px solid lightcoral;
+    margin-top: 13px;
+    color: black;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn.focus {
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+    padding-top: 150px;
+}
+
+.content .pr {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9px;
+    letter-spacing: 2px;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: lightcoral;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: lightgreen;
+}
+
+.content span {
+    color: green;
+    font-size: 50px;
+}
+
+.director-box {
+    position: fixed; 
+    right: 50px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 2px solid #333;
+    border-radius: 8px; 
+    padding: 50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 700px;
+    
+}
+
+.director-img {
+    width: 50%; 
+    border-radius: 5px; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.director-message {
+    font-size: 16px; 
+    font-weight: italic; 
+    text-align: center;
+    margin-top: 20px; 
+}
+
+
+
+
+/* ###############  from here footer is started  ############## */
+
+
+
+footer {
+    background-color: rgb(214, 224, 214);
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer.p {
+    font-style: bold;
+}
+
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
